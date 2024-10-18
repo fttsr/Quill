@@ -1,0 +1,60 @@
+.titlebar {
+    display: flex;
+    justify-content: space-between;
+    background: #242424;
+    height: 30px;
+    position: relative;
+    padding: 0 10px;
+  }
+  .titlebar-button {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    -webkit-user-select: none;
+    margin-left: 5px;
+  }
+  
+  
+  .title-label {
+    -webkit-user-select: none;
+    pointer-events: none;
+    margin: 0;
+    flex: 1;
+    margin-left: 5px;
+    font-size: 16px;
+    font-family: Montserrat;
+    line-height: 30px;
+  } 
+  
+  .titlebar-button:hover {
+    cursor: pointer;
+    transform: translateY(-0.2px); 
+  }
+  
+  #titlebar-close {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(100%) saturate(68390%) hue-rotate(0deg) brightness(95%) contrast(66.6%);
+  }
+  #titlebar-close:hover {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(64%) saturate(6839%) hue-rotate(0deg) brightness(95%) contrast(100%);
+  }
+  
+  #titlebar-minimize {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(100%) saturate(666%) hue-rotate(0deg) brightness(95%) contrast(22%);
+  }
+  #titlebar-minimize:hover {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(64%) saturate(666%) hue-rotate(0deg) brightness(95%) contrast(100%);
+  }
+  
+  #titlebar-maximize {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(100%) saturate(666%) hue-rotate(0deg) brightness(95%) contrast(44%);
+  }
+  #titlebar-maximize:hover {
+    filter: brightness(0) saturate(100%) invert(66%) sepia(64%) saturate(666%) hue-rotate(0deg) brightness(95%) contrast(100%);
+  }
+
+  #drag-area {
+    flex: 1;
+    cursor: move;
+  }

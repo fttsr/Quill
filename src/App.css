@@ -1,0 +1,130 @@
+body {
+  background-image: linear-gradient(#323232, 33.3%, #161414);
+  height: 100%; 
+  color: #FAFAFA;
+  font-family: Montserrat;
+  margin: 0;  
+  padding: 0;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  left: 0%;
+  opacity: 66.6%;
+  gap: 0.7rem;
+  margin-left: 5%;
+  margin-right: 5%; 
+  padding: 0 2rem;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.group-item {
+  display: flex;
+  gap: 0.11rem;
+  
+}
+
+.menu-item {
+  padding: 0.5rem 0.75rem;
+  background-image: linear-gradient(#308cce, 66.6%, #3d2742);
+  color: #FAFAFA;
+  width: 35px;
+  height: 35px;
+}
+
+.menu-item:hover {
+  transform: translateY(-1.5px);
+}
+.menu-item:active {
+  transform: translateY(0);
+}
+
+.ProseMirror {
+  padding: 1rem;
+  outline: none;
+  padding-top: 2.5rem;
+  margin-top: 9%;
+}
+
+.ProseMirror >
+ * + * {
+     margin-top: 0.75em;
+}
+
+.ProseMirror pre {
+  background: #0d0d0d;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.ProseMirror code {
+  background-color: rgba(97, 97, 97, 0.1);
+  color: #5eb6f1;
+}
+.ProseMirror blockquote {
+  padding-left: 1rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.ProseMirror img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ProseMirror ul, .ProseMirror ol {
+  padding: 0 1rem;
+  
+}
+
+
+
+ul li::before {
+  position: absolute;
+  content: '•';
+  color: #FF5733;
+  font-weight: bold;
+  display: inline-block;
+  left: 1%;
+}
+
+ol li {
+  counter-increment: item;
+}
+
+ol li::before {
+  position: absolute;
+  content: counter(item) '.';
+  color: #FF5733;
+  font-weight: bold;
+  display: inline-block;
+  left: 1%;
+  line-height: 1.5;
+}
+
+.ProseMirror h1, .ProseMirror h2, .ProseMirror h3, .ProseMirror h4, .ProseMirror h5, .ProseMirror h6 {
+  line-height: 1.1;
+}
+
+.ProseMirror {
+  padding: 1rem;
+}
+
+.ProseMirror hr {
+  border: none;
+  border-top: 2px solid rgba(13, 13, 13, 0.1);
+  margin: 2rem 0;
+}
+
+.tiptap p {
+  margin: 1em 0;
+}
+
+.is-active {
+  transform: translateY(-2px);
+  background-image: linear-gradient(#308cce, 50%, #3d2742);
+  color: #ffb9b9;
+}
+
